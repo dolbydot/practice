@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录注册</title>
+</head>
+<body>
+<form id="form" action="form.php" method="post" enctype="multipart/form-data">
+<fieldset>
+	<legend>用户</legend>
+	<input id="hiddenField" type="hidden" name="hiddenField" value="hiddenvalue"/>
+	<label for="username">用户：</label>
+	<input id="username" type="text" name="username" value="" size="15" maxlength="25"/>
+	<br/>
+	<label for="pass">密码：</label>
+	<input id="password" type="password" name="pass" value="" size="15" maxlength="25"/>
+</fieldset>
+
+	<fieldset disabled="false">
+		<legend>性别</legend>
+		<label for="sex">基佬</label>
+		<input id="sex" type="radio" value="1" name="sex"/>
+		<label for="sex">同志</label>
+		<input id="sex" type="radio" value="2" name="sex"/>
+		<label for="sex">玻璃</label>
+		<input id="sex" type="radio" value="3" name="sex"/>
+	</fieldset>
+
+	<fieldset>
+		<legend>爱好</legend>
+		<label for="fav">吃饭</label>
+		<input id="fav" type="checkbox" value="1" name="fav"/>
+		<label for="sex">睡觉</label>
+		<input id="fav" type="checkbox" value="2" name="fav"/>
+		<label for="sex">打豆豆</label>
+		<input id="fav" type="checkbox" value="3" name="fav"/>
+		<label for="sex">自闭症</label>
+		<input id="fav" type="checkbox" value="4" name="fav"/>
+	</fieldset>
+<fieldset>
+	<legend>靓照</legend>
+	<label for="myimage">照片上传</label>
+	<input id="myimage" type="file" value="" name="myimage" size="35" maxlength="255"/>
+</fieldset>
+<fieldset>
+	<legend>提交</legend>
+	<input id="submit" type="submit" value="提交" name="submit"/>
+	<input id="reset" type="reset" value="重置" name="reset"/>
+</fieldset>
+</form>
+</body>
+</html>
